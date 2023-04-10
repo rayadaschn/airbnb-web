@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkairbnb_web=self.webpackChunkairbnb_web||[]).push([[369],{369:function(e,n,b){b.r(n);b(791);var i=b(184);n.default=function(){return(0,i.jsx)("div",{children:"Detail"})}}}]);
-//# sourceMappingURL=369.b0c2bc51.chunk.js.map
