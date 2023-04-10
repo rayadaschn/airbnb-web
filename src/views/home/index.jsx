@@ -1,15 +1,20 @@
 import React, { useEffect } from "react";
 import HomeWrapper from "./style";
-import SectionHeader from "@/components/section-header";
 import { useSelector, shallowEqual, useDispatch } from "react-redux";
 import { fetchHomeDataAction } from "@/store/modules/home";
-import SectionRoom from "@/components/section-room";
+
+import HomeBanner from "./c-cons/home-banner";
+import HomeSectionV1 from "./c-cons/home-section-v1";
+import { isEmptyObj } from "@/utils";
+import HomeMaybe from "./c-cons/home-maybe";
 
 const Home = () => {
   /* 从 redux 中获取数据 */
-  const { goodPriceInfo } = useSelector(
+  const { longforInfo, goodPriceInfo, highScoreInfo } = useSelector(
     (state) => ({
+      longforInfo: state.home.longforInfo,
       goodPriceInfo: state.home.goodPriceInfo,
+      highScoreInfo: state.home.highScoreInfo,
     }),
     shallowEqual
   );
@@ -21,11 +26,18 @@ const Home = () => {
   }, [dispatch]);
   return (
     <HomeWrapper>
+      <HomeBanner />
       <div className="content">
-        <div className="good-price">
-          <SectionHeader title={goodPriceInfo.title} />
-          <SectionRoom roomList={goodPriceInfo.list} />
-        </div>
+        {/* 可能想去 */}
+        {isEmptyObj(longforInfo) && <HomeMaybe infoData={longforInfo} />}
+        {/* 好价推荐 */}
+        {isEmptyObj(goodPriceInfo) && (
+          <HomeSectionV1 infoData={goodPriceInfo} />
+        )}
+        {/* 高分推荐 */}
+        {isEmptyObj(highScoreInfo) && (
+          <HomeSectionV1 infoData={highScoreInfo} />
+        )}
       </div>
     </HomeWrapper>
   );

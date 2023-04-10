@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 const HomeWrapper = styled.div`
-  color: #222;
+  > .content {
+    width: 1032px;
+    margin: 0 auto;
+
+    > div {
+      margin-top: 30px;
+    }
+  }
 `;
 
 export default HomeWrapper;

@@ -4,11 +4,14 @@ import { Rating } from "@mui/material";
 import RoomItemWrapper from "./style";
 
 const RoomItem = memo((props) => {
-  const { itemData } = props;
+  const { itemData, itemWidth } = props;
   return (
-    <RoomItemWrapper>
+    <RoomItemWrapper
+      verifyColor={itemData?.verify_info?.text_color || "#39576a"}
+      itemWidth={itemWidth}
+    >
       <div className="inner">
-        <div className="img">
+        <div className="cover">
           <img src={itemData.picture_url} alt="图片" />
         </div>
         <div className="desc">{itemData.verify_info.messages.join(" · ")}</div>
