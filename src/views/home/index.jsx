@@ -26,18 +26,18 @@ const Home = () => {
   }, [dispatch]);
   return (
     <HomeWrapper>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
       <div className="content">
         {/* 可能想去 */}
         {isEmptyObj(longforInfo) && <HomeMaybe infoData={longforInfo} />}
         {/* 好价推荐 */}
-        {isEmptyObj(goodPriceInfo) && (
+        {/* {isEmptyObj(goodPriceInfo) && (
           <HomeSectionV1 infoData={goodPriceInfo} />
-        )}
+        )} */}
         {/* 高分推荐 */}
-        {isEmptyObj(highScoreInfo) && (
+        {/* {isEmptyObj(highScoreInfo) && (
           <HomeSectionV1 infoData={highScoreInfo} />
-        )}
+        )} */}
       </div>
     </HomeWrapper>
   );

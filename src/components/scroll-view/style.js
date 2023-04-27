@@ -3,6 +3,8 @@ import styled from "styled-components";
 const ScrollViewWrapper = styled.div`
   position: relative;
   padding: 8px 0;
+  /* 修复数据加载时, 子组件不填满 bug */
+  width: 100%;
 
   .scroll {
     overflow: hidden;

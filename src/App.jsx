@@ -6,7 +6,7 @@ import AppHeader from "./components/app-header";
 const App = memo(() => {
   return (
     <div className="app">
-      <AppHeader />
+      {/* <AppHeader /> */}
       <Suspense fallback="loading.............">
         <div className="page">{useRoutes(routes)}</div>
       </Suspense>
