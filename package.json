@@ -24,7 +24,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "git-push": "git add . && git commit -m 'update' && git push"
   },
   "eslintConfig": {
     "extends": [
