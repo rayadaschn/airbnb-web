@@ -135,6 +135,7 @@ const AppFooter = memo(() => {
           })}
         </div>
       </div>
+      <div style={{ height: "70px" }}></div>
     </AppFooterWrapper>
   );
 });
