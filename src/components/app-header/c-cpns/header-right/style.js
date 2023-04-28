@@ -5,6 +5,8 @@ export const RightWrapper = styled.div`
   flex: 1;
   justify-content: flex-end;
   align-items: center;
+
+  margin-right: 32px;
   color: ${(props) => props.theme.text.primaryColor};
 
   .btns {
@@ -39,6 +41,7 @@ export const RightWrapper = styled.div`
 
     .panel {
       position: absolute;
+      z-index: 2;
       top: 54px;
       right: 0;
       width: 240px;

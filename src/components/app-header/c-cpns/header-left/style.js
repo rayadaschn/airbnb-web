@@ -9,5 +9,8 @@ export const LeftWrapper = styled.div`
   .logo {
     margin-left: 24px;
     cursor: pointer;
+    img {
+      height: 32px;
+    }
   }
 `;

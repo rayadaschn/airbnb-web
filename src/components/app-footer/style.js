@@ -17,6 +17,11 @@ const AppFooterWrapper = styled.div`
     .box-left {
       display: flex;
       align-items: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      max-width: 400px;
+      overflow: hidden;
+
       font-weight: 600;
       line-height: 10px;
       span {

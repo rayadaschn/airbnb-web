@@ -28,8 +28,8 @@ const HeaderRight = memo(() => {
   return (
     <RightWrapper>
       <div className="btns">
-        <span className="btn">登录</span>
-        <span className="btn">注册</span>
+        {/* <span className="btn">登录</span>
+        <span className="btn">注册</span> */}
         <span className="btn">
           <IconGlobal />
         </span>

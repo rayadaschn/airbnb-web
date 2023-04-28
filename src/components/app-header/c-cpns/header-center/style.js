@@ -13,11 +13,19 @@ export const CenterWrapper = style.div`
     border-radius: 24px;
     cursor: pointer;
     ${(props) => props.theme.mixin.boxShadow};
+
+    font-size: 15px;
+    font-weight: 400;
     
-    .text {
-      padding: 0 16px;
+    .left {
+      padding: 0 14px;
       color: #222;
-      font-weight: 600;
+      white-space: nowrap;
+    }
+    .center, .right {
+      padding: 0 0 0 10px;
+      color: #717171;
+      border-left: 1px solid ;
     }
 
     .icon {
