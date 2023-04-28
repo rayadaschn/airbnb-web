@@ -6,6 +6,10 @@ import IconArrowLeft from "./icon-arrow-left";
 import IconArrowRight from "./icon-arrow-right";
 import IconMoreArrow from "./icon-more-arrow";
 import IconSearchBar from "./icon-search-bar";
+import IconFootWeiBo from "./icon_foot-weibo";
+import IconFootSupport from "./icon_foot-support";
+import IconFootChn from "./icon_foot-chn";
+import IconFootWeChat from "./icon_foot-wechat";
 
 export {
   IconAvatar,
@@ -16,4 +20,8 @@ export {
   IconArrowRight,
   IconMoreArrow,
   IconSearchBar,
+  IconFootWeiBo,
+  IconFootSupport,
+  IconFootChn,
+  IconFootWeChat,
 };

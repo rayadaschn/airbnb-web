@@ -3,7 +3,7 @@ import HomeWrapper from "./style";
 import { useSelector, shallowEqual, useDispatch } from "react-redux";
 import { fetchHomeDataAction } from "@/store/modules/home";
 
-import HomeBanner from "./c-cons/home-banner";
+// import HomeBanner from "./c-cons/home-banner";
 import HomeSectionV1 from "./c-cons/home-section-v1";
 import { isEmptyObj } from "@/utils";
 import HomeMaybe from "./c-cons/home-maybe";
@@ -26,7 +26,7 @@ const Home = () => {
   }, [dispatch]);
   return (
     <HomeWrapper>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
       <div className="content">
         {/* 可能想去 */}
         {isEmptyObj(longforInfo) && <HomeMaybe infoData={longforInfo} />}

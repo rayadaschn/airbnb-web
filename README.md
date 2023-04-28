@@ -26,7 +26,11 @@ npm run start
 
 ## → ToDo List
 
-- [ ] 首页 Footer
+- [x] 首页初始化
+- [x] scroll-view 滑动组件封装
+- [x] 首页 Footer
+- [ ] 首页 Loading 遮罩
 - [ ] 搜索页
 - [ ] 详情页
-- [ ] ......
+- [ ] 完善后端 API
+- [ ] 其它......
