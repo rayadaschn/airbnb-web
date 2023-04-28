@@ -19,14 +19,15 @@ const AppFooterWrapper = styled.div`
       align-items: center;
       flex-wrap: nowrap;
       white-space: nowrap;
-      max-width: 400px;
+      max-width: 600px;
       overflow: hidden;
 
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 500;
       line-height: 10px;
       span {
         display: inline-block;
-        margin-right: 6px;
+        margin-right: 8px;
         line-height: 20px;
       }
     }
